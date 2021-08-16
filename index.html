@@ -9,22 +9,30 @@
    <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
 
    <link rel="stylesheet" href="./css/styles.css">
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 
    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
    <title>PokéDex</title>
 </head>
 <body>
+
+   <div class="loading-screen">
+      <img src="./assets/loading.gif" alt="Pokebola carregando">
+   </div>
+
+   <header>
+      <div class="logo">
+         <img src="./assets/pokedex.png" alt="">
+      </div>
+      <form action="#">
+            <input type="text" name="search-input" id="search-input" placeholder="Busque um Pokémon...">
+      </form>
+   </header>
    
    <main class="container">
-      <header>
-         <div class="logo">
-            <img src="./assets/pokeball.svg" alt="">
-            <h1>PokéDex</h1>
-         </div>
-      </header>
-
       <section class="pokemons-container"></section>
    </main>
-   <script src="./js/main.js"></script>
+
+   <script type="module" src="./js/main.js"></script>
 </body>
 </html>
