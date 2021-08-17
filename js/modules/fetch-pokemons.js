@@ -50,7 +50,7 @@ export default class Pokemon {
       pokemons.forEach((pokemon) => {
         const pokemonName = pokemon.children[2].innerHTML;
         searchValue == pokemonName.slice(0, searchValueLength)
-          ? (pokemon.style.display = 'block')
+          ? (pokemon.style.display = 'flex')
           : (pokemon.style.display = 'none');
       });
     });
