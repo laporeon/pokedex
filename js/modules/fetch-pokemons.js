@@ -2,7 +2,7 @@ export default class Pokemon {
   constructor(searchField, count, container) {
     this.count = 150;
     this.searchField = document.querySelector('#search-input');
-    this.pokeContainer = document.querySelector('.pokemons-container');
+    this.pokeContainer = document.querySelector('.container');
   }
 
   async getPokemon() {
@@ -41,7 +41,23 @@ export default class Pokemon {
     this.pokeContainer.appendChild(pokeCard);
   }
 
+  searchPokemon() {
+    this.searchField.addEventListener('input', () => {
+      const pokemons = document.querySelectorAll('.card');
+      const searchValue = this.searchField.value.toLowerCase();
+      const searchValueLength = searchValue.length;
+
+      pokemons.forEach((pokemon) => {
+        const pokemonName = pokemon.children[2].innerHTML;
+        searchValue == pokemonName.slice(0, searchValueLength)
+          ? (pokemon.style.display = 'block')
+          : (pokemon.style.display = 'none');
+      });
+    });
+  }
+
   init() {
     this.getPokemon();
+    this.searchPokemon();
   }
 }
