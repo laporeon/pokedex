@@ -27,4 +27,4 @@ This project's still under development and future updates will be focused on:
 4. <a href="https://pokeapi.co/">PokéAPI</a>
 
 ## Live Version
-You can check the live version <a href="https://pokedex-project-pokeapi.netlify.app/">here</a>.
+You can check the live version <a href="https://pokewebdex.netlify.app/">here</a>.
