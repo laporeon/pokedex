@@ -90,19 +90,27 @@ header form #search-input:focus {
 
 /* ===== MAIN ===== */
 
-main {
+.container {
   max-width: 1170px;
   padding: 1.8rem 0;
   margin: 0 auto;
   font-family: 'Fira Code', monospace;
-  display: none;
-}
-
-.pokemons-container {
-  display: grid;
   grid-template-columns: 1fr;
   place-items: center;
   gap: 20px;
+  animation: show 0.5s ease-in-out;
+  display: none;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0px, 0);
+  }
 }
 
 .card {
@@ -209,13 +217,13 @@ main {
 }
 
 @media (min-width: 768px) {
-  .pokemons-container {
+  .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 1024px) {
-  .pokemons-container {
+  .container {
     grid-template-columns: repeat(3, 1fr);
   }
 }
