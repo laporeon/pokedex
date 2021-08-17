@@ -1,21 +1,21 @@
 export default class LoadingScreen {
-  constructor(loading, main) {
+  constructor(loading, container, input) {
     this.loading = document.querySelector('.loading-screen');
-    this.main = document.querySelector('main');
+    this.container = document.querySelector('.container');
   }
 
-  hideLoad() {
+  hideLoading() {
     this.loading.style.display = 'none';
   }
 
-  showMain() {
-    this.main.style.display = 'block';
+  showContainer() {
+    this.container.style.display = 'grid';
   }
 
   init() {
     setInterval(() => {
-      this.hideLoad();
-      this.showMain();
-    }, 3000);
+      this.hideLoading();
+      this.showContainer();
+    }, 1500);
   }
 }
