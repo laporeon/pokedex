@@ -17,7 +17,7 @@ This project's still under development and future updates will be focused on:
 - [x] Create loading screen.
 - [x] Improve UI.
 - [x] Add a search button to return a specific Pokemon card based on user's input.
-- [ ] Filter Pokémons by type.
+- [x] Filter Pokémons by type.
 
 ## 📫 Technologies
 
