@@ -17,7 +17,7 @@ This project's still under development and future updates will be focused on:
 - [x] Create loading screen.
 - [x] Improve UI.
 - [x] Add a search button to return a specific Pokemon card based on user's input.
-- [ ] Filter Pokémons by type.
+- [x] Filter Pokémons by type.
 
 ## 📫 Technologies
 
@@ -27,4 +27,4 @@ This project's still under development and future updates will be focused on:
 4. <a href="https://pokeapi.co/">PokéAPI</a>
 
 ## Live Version
-You can check the live version <a href="https://pokedex-project-pokeapi.netlify.app/">here</a>.
+You can check the live version <a href="https://pokewebdex.netlify.app/">here</a>.
